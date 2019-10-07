@@ -60,7 +60,7 @@ class Transformer Data:
                 transforms.Normalize((0.1307,), (0.3081,)),
             ])
 
-###Results improve
+### Results improve
 |   | Training | Testing |
 | ------------- | ------------- |-----------|
 | FashionMNIST  | 0.9907  | 0.9469|
