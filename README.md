@@ -39,6 +39,7 @@ class Transformer Data:
 
     def __len__(self):
         return len(self.base_dataset)
+
     Augmentation:
         RandomRotation:
             train_transforms1 = transforms.Compose([
@@ -59,7 +60,7 @@ class Transformer Data:
                 transforms.Normalize((0.1307,), (0.3081,)),
             ])
 
-####Results 
-    |   | Training | Testing |
-    | ------------- | ------------- |-----------|
-    | FashionMNIST  | 0.9907  | 0.9469|
+###Results improve
+|   | Training | Testing |
+| ------------- | ------------- |-----------|
+| FashionMNIST  | 0.9907  | 0.9469|
