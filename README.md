@@ -39,27 +39,27 @@ class Transformer Data:
 
     def __len__(self):
         return len(self.base_dataset)
-Augmentation:
-    RandomRotation:
-        train_transforms1 = transforms.Compose([
-            transforms.RandomRotation(20)
-        ])
-    RandomCrop:
-        train_transforms2 = transforms.Compose([
-            transforms.RandomCrop(28, padding=4)
-        ])
-    RandomHorizotalFlip:
-        train_transforms3 = transforms.Compose([
-            transforms.RandomHorizontalFlip()
-        ])
-    Grayscal, Normalize:
-        train_transforms4 = transforms.Compose([
-            transforms.Grayscale(),
-            transforms.ToTensor(),
-            transforms.Normalize((0.1307,), (0.3081,)),
-        ])
+    Augmentation:
+        RandomRotation:
+            train_transforms1 = transforms.Compose([
+                transforms.RandomRotation(20)
+            ])
+        RandomCrop:
+            train_transforms2 = transforms.Compose([
+                transforms.RandomCrop(28, padding=4)
+            ])
+        RandomHorizotalFlip:
+            train_transforms3 = transforms.Compose([
+                transforms.RandomHorizontalFlip()
+            ])
+        Grayscal, Normalize:
+            train_transforms4 = transforms.Compose([
+                transforms.Grayscale(),
+                transforms.ToTensor(),
+                transforms.Normalize((0.1307,), (0.3081,)),
+            ])
 
-####Result 
-|   | Training | Testing |
-| ------------- | ------------- |-----------|
-| FashionMNIST  | 0.9907  | 0.9469|
+####Results 
+    |   | Training | Testing |
+    | ------------- | ------------- |-----------|
+    | FashionMNIST  | 0.9907  | 0.9469|
